@@ -1,14 +1,16 @@
-document.querySelectorAll('.see_more').forEach(button => {
+document.querySelectorAll('.see-more').forEach(button => {
     button.addEventListener('click', function() {
         const cardContent = this.parentElement;
-        const moreText = cardContent.querySelector('.more-text');
+        const moreText = cardContent.querySelector('.show_text');
+        console.log(cardContent)
+        console.log(moreText)
 
         if (moreText.style.display === "inline") {
             moreText.style.display = "none";
-            this.textContent = "Ver más";
+            this.textContent = "See more";
         } else {
             moreText.style.display = "inline";
-            this.textContent = "Ver menos";
+            this.textContent = "See less";
         }
     });
-});
+})

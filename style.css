@@ -106,9 +106,12 @@ button {
     transition: background 0.3s;
 }
 
+.show_text{
+    display: none;
+}
 
 .paragraph {
-    display: none; 
+    /* display: none;  */
     color: white;
     padding: 10px;
     text-align: justify;
